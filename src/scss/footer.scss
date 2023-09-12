@@ -1,0 +1,99 @@
+//====================================================================================================
+.footer {
+	background-color: $mainColor;
+	padding-bottom: rem(103);
+	margin-top: -1px;
+	&__container {
+		padding: 0 rem(20);
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&._anim-items {
+			.footer__email,
+			.footer__tel,
+			.footer__info {
+				transform: translate(0px, 50px);
+				opacity: 0;
+			}
+		}
+
+		&._active {
+			.footer__email,
+			.footer__tel,
+			.footer__info {
+				transform: translate(0px, 0px);
+				opacity: 1;
+				transition: all 0.8s ease 0s;
+			}
+
+			.footer__tel {
+				transition: all 0.8s ease 0.2s;
+			}
+
+			.footer__info {
+				transition: all 0.8s ease 0.4s;
+			}
+		}
+	}
+
+	&__email,
+	&__tel,
+	&__info {
+		color: $textColor;
+		text-align: center;
+		font-size: rem(28);
+		font-weight: 300;
+		line-height: 140%;
+	}
+
+	&__email {
+	}
+
+	&__tel {
+		font-size: rem(22);
+		margin-bottom: rem(14);
+	}
+
+	&__info {
+		display: inline-block;
+		font-size: rem(18);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 3px;
+			left: 0;
+			width: 100%;
+			height: rem(1);
+			background-color: #fff;
+		}
+	}
+
+	@media (min-width: $mobile) {
+		&__email {
+			font-size: rem(40);
+		}
+
+		&__tel {
+			font-size: rem(32);
+		}
+
+		&__info {
+		}
+	}
+
+	@media (min-width: $tablet) {
+		&__info {
+			&:before {
+				width: 108%;
+			}
+		}
+	}
+}
+
+//====================================================================================================

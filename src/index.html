@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="promo">
+				<div class="promo__container">
+					<div class="promo__wrapper _anim-items _anim-no-hide">
+						<div class="promo__image-box">
+							<div class="promo__image-ibg">
+								<img src="@img/promo-text.svg" alt="Promo text">
+							</div>
+						</div>
+						<div class="promo__image-wrapper">
+							<div class="promo__image-ibg">
+								<img src="@img/promo.svg" alt="Promo">
+							</div>
+						</div>
+						<button class="promo__btn">Зарегистрироваться</button>
+					</div>
+					<p class="promo__text _anim-items _anim-no-hide">
+						Команда рекламного холдинга GroupM рада
+						открыть для вас двери digital-конференции NextM!
+
+					</p>
+					<p class="promo__text promo__text-bottom _anim-items _anim-no-hide">NextM – это ежегодная
+						digital-конференция,
+						организованная ведущей международной рекламной группой GroupM, входящей в состав
+						коммуникационного холдинга WPP и представленной в России агентствами Mindshare, MediaCom
+						и Wavemaker.
+					</p>
+
+				</div>
+				<a href="" class="promo__arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
+						<path d="M0.999999 0.999999L43.5 29L86 0.999995" stroke="white" stroke-width="2" />
+					</svg>
+				</a>
+			</section>
+
+			<section class="speakers">
+				<div class="speakers__container">
+					<h2 class="speakers__title _anim-items _anim-no-hide">Спикеры</h2>
+					<!-- Оболочка слайдера -->
+					<div class="speakers__slider swiper _anim-items _anim-no-hide">
+						<!-- Движущаяся часть слайдера -->
+						<div class="speakers__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+							<div class="speakers__slide swiper-slide">
+								<div class="speakers__image-ibg">
+									<img src="@img/speaker.png" alt="Speaker">
+									<div class="speakers__info">
+										<p class="speakers__name">Ярон Фаризон</p>
+										<p class="speakers__company">CEO MediaCom</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- Если требуется навигация (слева/справа) -->
+					<button type="button" class="swiper-button-prev">
+						<svg xmlns="http://www.w3.org/2000/svg" width="31" height="87" viewBox="0 0 31 87" fill="none">
+							<path d="M29.9275 1L2 43.5L29.9275 86" stroke="#0A2756" stroke-width="2" />
+						</svg>
+					</button>
+					<button type="button" class="swiper-button-next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="31" height="87" viewBox="0 0 31 87" fill="none">
+							<path d="M1.50259 86L29.4301 43.5L1.5026 1" stroke="#0A2756" stroke-width="2" />
+						</svg>
+					</button>
+				</div>
+			</section>
+
+			<section class="message">
+				<div class="message__container">
+					<h2 class="message__title _anim-items _anim-no-hide">Отправить сообщение</h2>
+					<form class="message__form _anim-items _anim-no-hide" action="#" method="POST">
+						<label for="">
+							<input type="text" name="yourname" placeholder="Ваше имя"
+								class="message__input message__name">
+							<span></span>
+						</label>
+						<label for="">
+							<input type="text" autocomplete="youremail" name="youremail" placeholder="E-mail"
+								class="message__input message__email">
+							<span></span>
+						</label>
+						<label for="" class="message__label-textarea">
+							<textarea name="yourmessage" placeholder="Ваше сообщение"
+								class="message__input message__textarea"></textarea>
+							<span></span>
+						</label>
+						<div class="message__button-wrap">
+							<button type="submit" class="message__button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
